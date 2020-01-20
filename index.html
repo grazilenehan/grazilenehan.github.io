@@ -1,11 +1,11 @@
 <!DOCTYPE html> 
 <html> 
 <head> 
+    <div id="target-container"></div>
     <title>Home Questionnaire<span id="selection-marker-1" class="redactor-selection-marker"></span></title> 
 
    <script>
   !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
-  analytics.load("0u0ghURs6Osm43438J24PjeCMMx2TRIn");
   analytics.page();
   }}();
 </script>
@@ -52,5 +52,16 @@
         });
       }
 </script>
+    <script
+     src="https://unpkg.com/@segment/consent-manager@1.2.0/standalone/consent-manager.js"
+     data-container="#target-container"
+     data-writeKey="<your-segment-write-key>"
+     data-bannerContent="We use cookies (and other similar technologies) to collect data to improve your experience on our site."
+     data-bannerSubContent="You can change your preferences at any time."
+     data-preferencesDialogTitle="Website Data Collection Preferences"
+     data-preferencesDialogContent="We use data collected by cookies and JavaScript libraries to improve your browsing experience, analyze site traffic, deliver personalized advertisements, and increase the overall performance of our site."
+     data-cancelDialogTitle="Are you sure you want to cancel?"
+     data-cancelDialogContent="Your preferences have not been saved. By continuing to use our website, you՚re agreeing to our Website Data Collection Policy."
+   ></script>
 </body> 
 </html>
